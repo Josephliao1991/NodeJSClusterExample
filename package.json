@@ -1,0 +1,26 @@
+{
+  "name": "NodeJSClusterExample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+      "express": "4.13.3"
+    },
+
+  "repository": {
+    "type": "git",
+    "url": "https://Josephliao1991@github.com/Josephliao1991/NodeJSClusterExample.git"
+  },
+  "keywords": [
+    "Cluster"
+  ],
+  "author": "JosephLiao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josephliao1991/NodeJSClusterExample/issues"
+  },
+  "homepage": "https://github.com/Josephliao1991/NodeJSClusterExample"
+}
