@@ -18,5 +18,5 @@ if (cluster.isMaster) {
     http.createServer(function (req, res) {
         console.log('worker'+cluster.worker.id);
         res.end('worker'+cluster.worker.id+',PID:'+process.pid);
-    }).listen(3000);
+    }).listen(8080);
 }
