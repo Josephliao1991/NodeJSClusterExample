@@ -1,13 +1,11 @@
 var cluster = require('cluster');
 var numCPUs = require('os').cpus().length;  //Get Number Of CPU
-require('should');
 
 
 var express = require('express');
 var app     = express()
 
 var index = 1;
-index.should.equal(index);
 
 if (cluster.isMaster) {
   console.log('[master] ' + "start master...");
@@ -60,9 +58,9 @@ if (cluster.isMaster) {
   setInterval(function() {
 
     if (index == workerId) {
-      index += 1
+      // index += 1
       // notify master about the request
-      // process.send({ cmd: 'notifyRequest' });
+      process.send({ cmd: 'notifyRequest' });
     }
   }, 1000);
 
