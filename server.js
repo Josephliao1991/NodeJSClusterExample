@@ -6,11 +6,6 @@ var express = require('express');
 var app     = express()
 
 var index = 1;
-/* Child.Process Can Not Share Variable, They Are Separate */
-/*  No shared state between the workers. */
-/*  Because workers are all separate processes,*/
-/*  they can be killed or re-spawned depending on your program's needs, */
-/*  without affecting other workers*/
 
 if (cluster.isMaster) {
   console.log('[master] ' + "start master...");
