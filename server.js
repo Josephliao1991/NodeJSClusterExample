@@ -1,6 +1,5 @@
 var cluster = require('cluster');
-//Get Number Of CPU
-var numCPUs = require('os').cpus().length;
+var numCPUs = require('os').cpus().length;  //Get Number Of CPU
 
 
 var express = require('express');
